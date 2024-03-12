@@ -28,6 +28,8 @@ The problem being addressed in this code is a specific MDP called "Slippery Walk
 
 ## POLICY ITERATION FUNCTION:
 ```py
+# NAME:SREEVALSAN V
+# REGISTER NO:21223240158
 def policy_iteration(P, gamma=1.0, theta=1e-10):
     random_actions = np.random.choice(tuple(P[0].keys()), len(P))
     pi=lambda s: {s:a for s, a in enumerate(random_actions)} [s]
